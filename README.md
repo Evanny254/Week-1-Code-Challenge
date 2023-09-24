@@ -27,3 +27,35 @@ speedLimit: The speed limit in kilometers per hour (70 km/h).
 rateOfDemeritPoints: The rate of demerit points per km over the speed limit (5 points per km over the limit).
 
 # Net Salary Calculator
+This Javascript calculates the net salary based on the provided basic salary and benefits. It accounts for deductions such as NHIF, PAYEE, and NSSF.
+
+To calculate the net salary, modify the values of basicSalary and benefits to reflect the actual salary and benefits for the employee.
+
+Variables
+
+basicSalary: The basic salary of the employee.
+benefits: Additional benefits for the employee.
+grossSalary: The total gross salary (sum of basic salary and benefits).
+
+Deductions
+
+NHIF Deductions
+NHIF deductions are calculated based on specific salary ranges:
+
+0 - 5,999: Deduct 150
+6,000 - 7,999: Deduct 300
+... and so on
+
+PAYEE Deductions
+PAYEE deductions are calculated based on specific salary ranges:
+
+1 - 24,000: 10% of the gross salary
+24,001 - 32,333: 25% of the gross salary
+... and so on
+
+NSSF Deductions
+NSSF deductions are a flat 6% of the gross salary.
+
+Net Salary Calculation
+
+The net salary is calculated by subtracting NHIF, PAYEE, and NSSF deductions from the gross salary.
